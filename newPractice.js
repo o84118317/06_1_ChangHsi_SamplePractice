@@ -8,3 +8,4 @@ function User(name) {
 
 let jonh = User('John'); // redirects call to new User
 alert (john.name); // John 
+...
