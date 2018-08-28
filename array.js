@@ -15,3 +15,7 @@ fruits[3] = 'Lemon';
 alert( fruits.length ); 
 // 4
 // The total count of the elements in the array is its length
+
+alert (fruits);
+// Apple, Orange, Pear, Lemon
+// We can also alert to show the whole array
