@@ -3,4 +3,5 @@ function sayHello(name) {
 	console.log('Hello ' + name);
 }
 
-sayHello('Oscar');
+// sayHello('Oscar');
+console.log(window);
