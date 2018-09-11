@@ -7,9 +7,17 @@ identity(3)  3
 
 */
 
-
+// answer one
 function identity(argument) {
-	return (argument)
+	return (argument);
+}
+
+identity(3);
+
+// answer two
+
+let identity = function identity(x) {
+	return x;
 }
 
 identity(3);
