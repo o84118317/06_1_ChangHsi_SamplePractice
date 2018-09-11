@@ -24,6 +24,5 @@ function addf(first) {
 
 addf(3)(4);
 
-// third try 
 
-function addf(first) => (second) => first + second 
+
