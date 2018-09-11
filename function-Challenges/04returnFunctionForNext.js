@@ -14,3 +14,16 @@ function addf(first) {
 }
 
 addf(3)(4);
+
+
+// another try
+
+function addf(first) {
+	return (second) => first + second;
+}
+
+addf(3)(4);
+
+// third try 
+
+function addf(first) => (second) => first + second 
