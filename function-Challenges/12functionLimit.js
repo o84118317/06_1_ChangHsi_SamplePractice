@@ -12,11 +12,11 @@ add_ltd(3, 5); // undefined
 
 // my answer
 function limit(binary,timer) {
+	let setTime = timer;
+	timer -= 1;
 	return function (a, b) {
-		let setTime = timer;
-		timer -= 1;
 		if (setTime) {
-			return binary(a, b);
+		return binary(a, b);
 		};
 	};
 }
