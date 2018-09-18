@@ -13,3 +13,33 @@ add_rev(3, 4); //7
 rev.revoke();
 add_rev(5, 7); //12 
 */
+
+//  my answer
+function revocable(bin) {
+	let count = 1;
+	return {
+		invoke: function(a,b) {
+			if (count === 1) {
+				return bin(a + b);
+			}
+		},
+		revoke: function() {
+			count -= 1;
+		}
+	};
+}
+
+//correct answer
+
+function revocable(binary) {
+	return {
+		invoke: function (a,b) {
+			if (binary !== undefined) {
+				return binary(a,b);
+			}
+		},
+		revoke: function () {
+			binary = undefined;
+		}
+	};
+}
