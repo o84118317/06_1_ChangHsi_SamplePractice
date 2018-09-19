@@ -26,3 +26,30 @@ function exp(value) {
 		? value[0](value[1], value[2])
 		: vlaue;
 }
+
+/*
+Modify exp to evaluate nested
+array expressions.
+
+let nae = [
+	Math.sqrt, 
+	[
+		add, 
+		[square, 3]
+		[square, 4]
+	]
+];
+
+exp(nae) //5
+
+*/
+
+
+function exp(value) {
+	
+
+	
+	return (Array.isarray(value))
+		? value[0](value[1], value[2])
+		: vlaue;
+}
