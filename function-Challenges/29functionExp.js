@@ -46,10 +46,8 @@ exp(nae) //5
 
 
 function exp(value) {
-	
 
-	
 	return (Array.isarray(value))
-		? value[0](value[1], value[2])
+		? value[0](exp(value[1]), exp(value[2]))
 		: vlaue;
 }
