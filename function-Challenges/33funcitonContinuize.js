@@ -22,3 +22,10 @@ function continuize(unary) {
 		return callback( unary(argument) );
 	};
 }
+
+// answer apply today
+function continuize(unary) {
+	return function (callback, ...x) {
+		return callback( unary(...x) );
+	};
+}
