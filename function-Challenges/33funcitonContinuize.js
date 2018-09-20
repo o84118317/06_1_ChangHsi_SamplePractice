@@ -15,3 +15,10 @@ function continuize(unary) {
 		callback( unary(argument) );
 	};
 }
+
+// correct answer
+function continuize(unary) {
+	return function (callback, argument) {
+		return callback( unary(argument) );
+	};
+}
