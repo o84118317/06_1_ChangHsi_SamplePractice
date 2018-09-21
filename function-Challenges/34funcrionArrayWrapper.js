@@ -29,3 +29,20 @@ function vector() {
 	};;
 }
 
+// correct answer
+
+function vector() {
+	let array = [];
+
+	return {
+		append: function append(v) {
+			array.push(v);
+		},
+		store: function store(i,v) {
+			array[i] = v;
+		},
+		get: function get(i) {
+			return array[i];
+		}
+	};
+}
