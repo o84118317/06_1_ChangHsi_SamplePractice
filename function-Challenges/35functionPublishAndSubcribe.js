@@ -24,3 +24,19 @@ function publish() {
 	};	
 };
 
+// correct answer
+
+function pubsub() {
+	let subcribers = [];
+	return {
+		subcribe: function(subcriber) {
+			subcribers.push(subcriber);
+		},
+
+		publish: function(publication) {
+			for (let i = o; i < subcribers.lenght; i++) {
+				subcribers[i](publication);
+			}
+		}
+	};
+}
